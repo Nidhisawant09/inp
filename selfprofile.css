@@ -1,0 +1,25 @@
+body {
+    background-color: beige;
+
+}
+
+h1 {
+    color: rgb(14, 1, 7);
+    text-align: left;
+    padding: 20px 0;
+    background-color: rgb(42, 124, 124);
+    
+}
+
+h2 {
+    background-color: rgb(42, 124, 124);
+    color: rgb(14, 1, 7);
+    
+    
+
+}
+
+h4 {
+    color: darkmagenta;
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Arrow funation</title>
+    </head>
+    <body>
+        <script>
+            console.log("1.sum of marks and its average.");
+            console.log("2.fibonacci series.");
+            console.log("3.sort of elements using bubble sort.");
+            console.log("4.entered string is palindrome or not");
+            //sum of marks and its average
+            var sumofmarks = () => {
+                var arr = [];
+                for (var i = 0; i < 6; i++) {
+                    arr[i] = parseInt(prompt('enter your marks:'));
+                    }
+                    for(var i=0; i<5;i++)
+                    {
+                        console.log("value= ",arr[i]);
+                        }
+                        sum = 0;
+                        for (var i = 0; i < 6; i++) {
+                            sum = sum + arr[i];
+                            }
+                            average = sum / 5
+                            console.log("the sum of marks is :", sum)
+                            console.log("and the average is:", average);
+                    }
+            //fibonacci series arrow function
+             var fibonacci = () => {
+                const number = parseInt(prompt('Enter the number of terms: '));
+                var n1 = 0, n2 = 1, nextTerm;
+                console.log('Fibonacci Series:');
+                console.log('Fibonacci Series:');
+                for (var i = 1; i <= number; i++) {
+                    console.log(n1);
+                    nextTerm = n1 + n2;
+                    n1 = n2;
+                    n2 = nextTerm;
+                }
+            }
+            //bubble sort
+            var sort = () => {
+              var arr = [];
+                    for (var i = 0; i < 5; i++) {
+                        arr[i] = parseInt(prompt("Enter the value:"))
+                    }
+                    for (var i = 0; i < arr.length; i++) {
+                        for (var j = 0; j < (arr.length - i - 1); j++) {
+                            if (arr[j] > arr[j + 1]) {
+                                var temp = arr[j]
+                                arr[j] = arr[j + 1]
+                                arr[j + 1] = temp
+                            }
+                        }
+                    }
+                    console.log(arr);
+                }  
+           
+            //palindrome
+            var palindrome = () => {
+                const string = prompt('Enter a string: ');
+                console.log('The entered string is ',string)
+                const len = string.length;
+                for (let i = 0; i < len / 2; i++) {
+                    if (string[i] !== string[len - 1 - i]) {
+                        console.log('it is not a palindrome');
+                    }
+                    else {
+                        console.log('It is a palindrome');
+                    }
+                }
+            }
+            var chc =Number(prompt('enter your choice from the given option in number.'));
+            switch (chc) {
+                case 1: sumofmarks();
+                break;
+                case 2: fibonacci();
+                break;
+                case 3: sort();
+                break;
+                case 4: palindrome();
+                break;
+            }
+            </script>
+        </body>
+        </html>
+
+                                                           
+
+                
+              
+                                                
+                                                        
+                                                          
+                                                               
+                                                           
+                                                                
+                                                           
+                                                           
+                                                            
+                                                               
+                                                               
+                                                               
+        
+
+   

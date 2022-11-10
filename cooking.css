@@ -1,0 +1,23 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    background-color: rgb(37, 37, 94);
+    text-align: left;
+    color: antiquewhite;
+    padding: 20px 0;
+    border-bottom: 1px solid #c41313;
+    border-color: blueviolet;
+}
+
+h2{
+    background-color: rgb(37, 37, 94);
+    padding: 20px 0;
+    text-align: left;
+    color: antiquewhite;
+    border-color: blueviolet;
+    border-bottom: #c41313;
+}
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp 6</title>
+</head>
+
+<body>
+    <script>
+        var sumofmarks = () => {
+            var arr = [];
+            sum = 0;
+            for (var i = 0; i < 5; i++) {
+                arr[i] = parseInt(prompt("Enter the value:"))
+            }
+            for (var i = 0; i < 5; i++) {
+                sum = sum + arr[i]
+            }
+            var avg = sum / 5;
+            console.log(sum, avg)
+        }
+        var fibonacci = () => {
+            const number = parseInt(prompt('Enter the number of terms: '));
+            let n1 = 0, n2 = 1, nextTerm;
+
+            console.log('Fibonacci Series:');
+
+            for (let i = 1; i <= number; i++) {
+                console.log(n1);
+                nextTerm = n1 + n2;
+                n1 = n2;
+                n2 = nextTerm;
+            }
+
+        }
+
+        var sort = () => {
+              var arr = [];
+                    for (var i = 0; i < 5; i++) {
+                        arr[i] = parseInt(prompt("Enter the value:"))
+                    }
+                    for (var i = 0; i < arr.length; i++) {
+                        for (var j = 0; j < (arr.length - i - 1); j++) {
+                            if (arr[j] > arr[j + 1]) {
+                                var temp = arr[j]
+                                arr[j] = arr[j + 1]
+                                arr[j + 1] = temp
+                            }
+                        }
+                    }
+                    console.log(arr);
+                }  
+        var pallindrome = () => {
+             var string = prompt("Enter Your String-->");
+            for (let i = 0; i < string.length / 2; i++) {
+                if (string[i] !== string[string.length - 1 - i]) {
+                    console.log('It is not a palindrome');
+                }
+                else {
+                    console.log("Palindrome!!")
+                }
+            }
+        
+
+        }
+
+
+        
+
+        console.log(`1.sumofmarks
+        2.fibonacci
+        3.Sort
+        4.string pallindrome`)
+
+        var ch = Number(prompt("enter your choice: "))
+        switch (ch) {
+            case 1:
+                sumofmarks();
+                break;
+
+            case 2:
+                fibonacci();
+
+            case 3:
+                sort();
+
+            case 4:
+                pallindrome();
+        }
+    </script>
+
+</body>
+
+</html>

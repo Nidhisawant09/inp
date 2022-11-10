@@ -1,0 +1,19 @@
+body {
+    background-color: bisque;
+
+}
+h2 {
+    background-color: khaki;
+    text-align: left;
+    color: rgb(5, 4, 4);
+    padding: 20px 0;
+    border-bottom: 1px solid #cccccc;
+    }
+h3 {
+    background-color: rgb(224, 216, 147);
+    font-size: 16px;
+    text-align: left;
+    background-origin: padding-box;
+    border-bottom: 1px solid #cccccc;
+    color: black;
+    }

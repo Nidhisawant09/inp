@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Control Sturctures in JAVASCRIPT</title>
+    </head>
+    <body>
+        <script>
+            console.log(`1.To find the greatest of three numbers
+            2.Even numbers less than 20
+            3.Area of Triangle
+            4.Leap year or not
+            5.Table of given number n
+            6.Given Number perfect or not`)
+            var ch = parseInt(prompt("Enter the choice"));
+            switch (ch) {
+                case 1: //To find the greatest of three numbers
+                var a = parseInt(prompt("Enter first number"));
+                var b = parseInt(prompt("Enter second number"));
+                var c = parseInt(prompt("Enter third number"));
+                if (a > b) {
+                    if (a>b){
+                        if (a > c) {
+                            console.log(a + "is greatest number")
+
+                        }
+                        else {
+                            console.log(c + "is greatest number")
+
+                        }
+                    }
+                }
+                else if (b > c) {
+                    if (b > c) {
+                        console.log(b + "is greatest number")
+                    }
+                }
+                break
+                case 2: //Even numbers less than 20
+                console.log("Even numbers less than 20")
+                for (var i = 0; i < 20; i++ ) {
+                    if (i % 2 == 0) {
+                        console.log(i);
+                    }
+                    else {
+                        console.log("not even")
+
+                    }
+                }
+                break
+                case 3: //Area of Triangle
+                console.log("Area of Triangle")
+                var x = parseInt(prompt("Enter base of triangle"));
+                var y = parseInt(prompt("Enter height of triangle"));
+                var w = 0.5 * x * y;
+                console.log(w)
+                break
+                case 4: //Leap year or not
+                console.log("Leap year or not")
+                var v = parseInt(prompt("enter the year"));
+                if (v % 4 == 0) {
+                    console.log("leap year it is !!")
+                }
+                else { 
+                    console.log(" No leap year it is !!")
+
+                }
+                break
+                case 5: //Table of given number n
+                console.log("Table of given number n")
+                var t = parseInt(prompt("ENTER THE NUMBER"))
+                for (var i = 1; i <= 10; i++){
+                    console.log(t + "x" + i + "=" + t * i)
+                }
+                break
+                case 6: //Given Number perfect or not
+                console.log("Given number perfect or not")
+                var b = parseInt(prompt("enter the number"));
+                var temp = 0;
+                for (var i = 0; i <= b / 2; i++) {
+                    if (b % i == 0) {
+                        temp += i;
+                    }
+                }
+                if(temp == b && temp != 0){
+                    console.log("Perfect no.")
+                }
+                else {
+                    console.log("not a perfect no.")
+                }
+                break
+            }
+        </script>
+    </body>
+</html>
